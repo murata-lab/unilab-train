@@ -6,12 +6,13 @@ FORCE_RM=true
 
 build_python_linux:
 	docker build \
-		--build-arg USER_ID=$(shell id -u) \
-		--build-arg GROUP_ID=$(shell id -g) \
-		-f docker/Dockerfile \
-		-t unilab_train_python \
-		--force-rm=${FORCE_RM}\
-		.
+     --build-arg USER_ID=3045 \
+     --build-arg GROUP_ID=1000 \
+     -f docker/Dockerfile \
+     -t unilab_train_python \
+     --force-rm=true\
+     .
+
 
 restart: stop run
 
