@@ -82,7 +82,7 @@ func (is *InetServer) Start() {
 }
 
 func main() {
-	is := NewInetServer("10.63.60.216", 8080)
+	is := NewInetServer("10.63.60.215", 8080)
 	for {
 		is.Start()
 	}

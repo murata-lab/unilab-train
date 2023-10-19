@@ -6,6 +6,8 @@ from math import pi
 import math
 arucoMarkerLength = 0.05
 
+
+
 class AR():
 
     def __init__(self, videoPort, cameraMatrix, distortionCoefficients):
